@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="fab">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Made in India — Atmanirbhar Bharat</title>
+<meta name="description" content="A filterable showcase of things designed, built or grown in India — across digital, space, defence, health and infrastructure.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312141C'/%3E%3Cpath d='M4 24c4-1 5-7 8-9s4 3 8 3h4v-6h6' stroke='%23E17A2D' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='28' cy='12' r='2.4' fill='%23E17A2D'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/premium.css">
+</head>
+<body>
+<div class="toran-strip" aria-hidden="true"></div>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="progress-thread" id="progressThread"></div>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="14" cy="14" r="10.5" stroke="currentColor" stroke-width="1.5"/>
+          <g stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+            <line x1="14" y1="4.6" x2="14" y2="7.8"/>
+            <line x1="14" y1="20.2" x2="14" y2="23.4"/>
+            <line x1="4.6" y1="14" x2="7.8" y2="14"/>
+            <line x1="20.2" y1="14" x2="23.4" y2="14"/>
+            <line x1="7.3" y1="7.3" x2="9.6" y2="9.6"/>
+            <line x1="18.4" y1="18.4" x2="20.7" y2="20.7"/>
+            <line x1="20.7" y1="7.3" x2="18.4" y2="9.6"/>
+            <line x1="9.6" y1="18.4" x2="7.3" y2="20.7"/>
+          </g>
+          <circle cx="14" cy="14" r="2.3" fill="currentColor"/>
+        </svg>
+      </span>
+      Atmanirbhar Bharat<span class="brand-sub">आत्मनिर्भर भारत</span>
+    </a>
+    <nav id="navLinks" class="nav-links" aria-label="Primary">
+      <a href="index.html" data-en="Home" data-hi="होम">Home</a>
+      <a href="pillars.html" data-en="Pillars" data-hi="स्तंभ">Pillars</a>
+      <a href="timeline.html" data-en="Timeline" data-hi="समयरेखा">Timeline</a>
+      <a href="made-in-india.html" data-en="Made in India" data-hi="भारत निर्मित">Made in India</a>
+      <a href="voices.html" data-en="Voices" data-hi="आवाज़ें">Voices</a>
+      <a href="pledge.html" data-en="Pledge" data-hi="संकल्प">Pledge</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle lang-toggle" id="langToggle" aria-label="Switch between English and Hindi"><span data-lang-label="en">EN</span><span data-lang-label="hi">हिं</span></button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch between Loom and Fab theme">
+        <span data-theme-label="loom">LOOM</span><span data-theme-label="fab">FAB</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section-tight container">
+    <p class="kicker">The proof</p>
+    <h1 class="mt-md">Made in India</h1>
+    <p class="lede mt-md">Twelve things designed, built or grown at home. Filter by category — showing <strong id="resultCount">12</strong> of 12.</p>
+    <div class="filters mt-lg">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="digital">Digital</button>
+      <button class="filter-btn" data-filter="space">Space</button>
+      <button class="filter-btn" data-filter="defence">Defence</button>
+      <button class="filter-btn" data-filter="health">Health</button>
+      <button class="filter-btn" data-filter="infra">Infrastructure</button>
+    </div>
+  </section>
+
+  <section class="section-tight container photo-proof-intro">
+    <div class="photo-proof-grid">
+      <div class="photo-proof-map">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Map%20of%20India.svg" alt="Political map of India" loading="lazy" onerror="this.closest('.photo-proof-map').style.display='none'">
+      </div>
+      <div>
+        <p class="kicker">Beyond the label</p>
+        <h2>Made here. Used here. Ready for the world.</h2>
+        <p class="lede mt-md">A self-reliant nation is not one product. It is an ecosystem of farms, laboratories, factories, digital networks, railways and people.</p>
+        <div class="proof-chips mt-lg">
+          <span>Digital</span><span>Space</span><span>Defence</span><span>Health</span><span>Infrastructure</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight container">
+    <div class="grid grid-3">
+
+      <div class="card achieve-card" data-category="digital" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="5" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="5" cy="17" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="17" r="2" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v6M12 13l-5.5 2M12 13l5.5 2" stroke="currentColor" stroke-width="1.6"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/UPI.jpg" alt="UPI — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Digital</span>
+        <h3>UPI</h3>
+        <p class="text-soft">A phone number and a PIN move money instantly, at a scale few national payment systems match.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="digital" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="5" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="5" cy="17" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="17" r="2" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v6M12 13l-5.5 2M12 13l5.5 2" stroke="currentColor" stroke-width="1.6"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Aadhaar%20enrollment%20drive-1.jpg" alt="Aadhaar — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Digital</span>
+        <h3>Aadhaar</h3>
+        <p class="text-soft">A single digital identity underpinning bank accounts, welfare delivery and everyday verification.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="digital" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="5" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="5" cy="17" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="19" cy="17" r="2" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v6M12 13l-5.5 2M12 13l5.5 2" stroke="currentColor" stroke-width="1.6"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Digital%20India.jpg" alt="ONDC — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Digital</span>
+        <h3>ONDC</h3>
+        <p class="text-soft">An open commerce network so any seller — not just one app's sellers — can reach a buyer online.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="space" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2c3 2 4 6 4 10 0 2-1 4-4 8-3-4-4-6-4-8 0-4 1-8 4-10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 15l-3 4M16 15l3 4" stroke="currentColor" stroke-width="1.6"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Chandrayaan3-landed.jpg" alt="Chandrayaan-3 — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Space</span>
+        <h3>Chandrayaan-3</h3>
+        <p class="text-soft">Touched down near the Moon's south pole in August 2023 — a first for any nation.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="space" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2c3 2 4 6 4 10 0 2-1 4-4 8-3-4-4-6-4-8 0-4 1-8 4-10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 15l-3 4M16 15l3 4" stroke="currentColor" stroke-width="1.6"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/PSLV_ISRO_India_Launch_Vehicle.JPG" alt="PSLV — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Space</span>
+        <h3>PSLV</h3>
+        <p class="text-soft">A homegrown launch vehicle that has carried satellites into orbit for customers around the world.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="space" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2c3 2 4 6 4 10 0 2-1 4-4 8-3-4-4-6-4-8 0-4 1-8 4-10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 15l-3 4M16 15l3 4" stroke="currentColor" stroke-width="1.6"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mission%20Gaganyaan.jpg" alt="Gaganyaan — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Space</span>
+        <h3>Gaganyaan</h3>
+        <p class="text-soft">India's own human spaceflight programme, built to send Indian astronauts up on an Indian rocket.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="defence" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Brahmos%20imds.jpg" alt="BrahMos — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Defence</span>
+        <h3>BrahMos</h3>
+        <p class="text-soft">A supersonic cruise missile developed jointly and manufactured on Indian soil.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="defence" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Agni-V_MIRV.jpg" alt="Agni-V — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Defence</span>
+        <h3>Agni-V</h3>
+        <p class="text-soft">A long-range ballistic missile designed, developed and built domestically.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="defence" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Vikrant.jpg" alt="INS Vikrant — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Defence</span>
+        <h3>INS Vikrant</h3>
+        <p class="text-soft">India's first domestically built aircraft carrier, commissioned in 2022.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="health" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Covaxin.jpg" alt="Covaxin — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Health</span>
+        <h3>Covaxin</h3>
+        <p class="text-soft">A COVID-19 vaccine researched, trialled and manufactured entirely within India.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="infra" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="10" width="18" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="19" r="1.6" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="19" r="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M6 10V6h9l3 4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Vande%20bharat%20Express.jpg" alt="Vande Bharat Express — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Infrastructure</span>
+        <h3>Vande Bharat Express</h3>
+        <p class="text-soft">Domestically designed high-speed trains, now running across a growing list of routes.</p>
+      </div>
+
+      <div class="card achieve-card" data-category="infra" data-reveal>
+        <svg class="achieve-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="10" width="18" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="19" r="1.6" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="19" r="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M6 10V6h9l3 4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        
+        <img class="achieve-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Semicon%20India%202023.jpg" alt="Semiconductor Mission — real photograph or Wikimedia Commons visual" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag">Infrastructure</span>
+        <h3>Semiconductor Mission</h3>
+        <p class="text-soft">A national push to design and fabricate chips on Indian soil, not just assemble them.</p>
+      </div>
+
+    </div>
+    <p class="image-source-note">Real images: Wikimedia Commons. Image pages are linked through the images above.</p>
+  </section>
+</main>
+<div class="motif-border" aria-hidden="true"></div>
+
+<footer class="site-footer">
+  <div class="container footer-quote-wrap">
+    <p class="footer-quote">
+      <span data-en="“Dream, dream, dream. Dreams transform into thoughts, and thoughts result in action.”" data-hi="“सपने देखो, सपने देखो, सपने देखो। सपने विचारों में बदलते हैं, और विचार कर्म में।”">“Dream, dream, dream. Dreams transform into thoughts, and thoughts result in action.”</span>
+      <span class="footer-quote-author" data-en="— A. P. J. Abdul Kalam" data-hi="— ए. पी. जे. अब्दुल कलाम">— A. P. J. Abdul Kalam</span>
+    </p>
+  </div>
+  <div class="container footer-inner">
+    <span>a Web Vision Bharat project · <span id="year"></span></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/made-in-india.js"></script>
+</body>
+</html>
